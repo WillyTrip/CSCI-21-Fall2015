@@ -1,5 +1,5 @@
 lab24test: lab_24_unit_test.o sorting.o
-	g++ -Wall -g -o lab24test lab_24_unit_test.o sorting.o
+	g++ -Wall -g -o lab24test lab_24_unit_test.o sorting.olab24
 
 sorting: sorting.cpp sorting.h
 	g++ -Wall -g -c sorting.cpp
