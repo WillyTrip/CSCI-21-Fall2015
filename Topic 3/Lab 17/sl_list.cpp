@@ -14,17 +14,22 @@ void SLList::InsertHead(int contents)
 
 void SLList::InsertTail(int contents)
 {
-    SLNode *temp;
-        
-        SLNode *new_node = new SLNode(contents);
-        tail_->set_next_node(new_node);
-        tail_=new_node;
-        size_++;
+    if(tail_ != NULL)
+    {
+        SLNode *temp = new SLNode(contents);
+        tail_ -> set_next_node(temp);
+        tail_ = temp;
         tail_ -> set_next_node(NULL);
-        if (head_ == NULL)
-        {
-            head_ = tail_;
-        }
+        size_++;
+    }
+    else if(tail_ == NULL)
+    {
+        SLNode *temp = new SLNode(contents);
+        tail_ = temp;
+        tail_ -> set_next_node(NULL);
+        head_ = tail_;
+        size_++;
+    }
 }
 
 void SLList::RemoveHead()

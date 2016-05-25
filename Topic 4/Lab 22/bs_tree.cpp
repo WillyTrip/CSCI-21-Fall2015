@@ -2,7 +2,7 @@
 
 bool BSTree::Insert(int contents, BSTNode*& temp_root)
 {
-    if (contents == temp_root)
+    if (contents == temp_root->contents())
     {
         return false;
     }
@@ -15,13 +15,13 @@ bool BSTree::Insert(int contents, BSTNode*& temp_root)
     }
     else
     {
-        if (contents < temp_root->contents_)
+        if (contents < temp_root->contents())
         {
-            return Insert(contents, temp_root -> set_left_child(contents));
+            return Insert(contents, temp_root -> set_left_child(contents_);
         }
-        else if (contents > temp_root->contents_)
+        else if (contents > temp_root->contents())
         {
-            return Insert(contents, temp_root -> set_right_child(contents));
+            return Insert(contents, temp_root -> set_right_child(contents_);
         }
     }
 }

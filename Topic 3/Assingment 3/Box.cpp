@@ -1,5 +1,5 @@
 #include "Box.h"
-#include "Prize.h"
+//#include "Prize.h"
 
 Box::~Box()
 {
@@ -63,4 +63,4 @@ Prize Box::removePrize(unsigned int index)
     }
 }
 
-};
+//};

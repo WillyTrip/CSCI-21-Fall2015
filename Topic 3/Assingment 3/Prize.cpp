@@ -5,22 +5,22 @@ Prize::~Prize()
     
 }
 
-string Prize::get_prizeName()
+string Prize::getPrizeName()
 {
     return prizeName_;
 }
 
-unsigned int Prize::get_prizeValue()
+unsigned int Prize::getPrizeValue()
 {
     return prizeValue_;
 }
 
-void Prize::set_prizeName(string prizeName)
+void Prize::setPrizeName(string prizeName)
 {
     prizeName_ = prizeName;
 }
 
-void Prize::set_prizeValue(unsigned int prizeValue)
+void Prize::setPrizeValue(unsigned int prizeValue)
 {
     prizeValue_ = prizeValue;
 }

@@ -29,7 +29,7 @@ class Box
             :boxNumber_(boxNumber), boxColor_(boxColor), prizeCapacity_(prizeCapacity)
             {
                 Prize *prize = new Prize[prizeCapacity_];
-
+            }
 
         ~Box();
         

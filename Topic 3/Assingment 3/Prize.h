@@ -26,11 +26,11 @@ class Prize
         
         friend bool operator ==(const Prize& name1, const Prize& name2);
         
-        string get_prizeName();
-        unsigned int get_prizeValue();
+        string getPrizeName();
+        unsigned int getPrizeValue();
         
-        void set_prizeName(string prizeName);
-        void set_prizeValue(unsigned int prizeValue);
+        void setPrizeName(string prizeName);
+        void setPrizeValue(unsigned int prizeValue);
 };
 
 #endif

@@ -1,5 +1,5 @@
 assignmenttest: Prize.o Box.o assignment3_unit_test.o
-	g++ -Wall -g -o runmain Prize.o Box.o assignment3_unit_test.o
+	g++ -Wall -g -o assignmenttest Prize.o Box.o assignment3_unit_test.o
 
 assign_3_unit_test.o: assignment3_unit_test.cpp
 	g++ -Wall -g -c assignment3_unit_test.cpp
